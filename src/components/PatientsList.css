@@ -1,0 +1,128 @@
+/* Contenedor principal de la lista de pacientes */
+.patients-list-container {
+  padding: 20px;  /* Espaciado interno */
+  background-color: #fff;  /* Fondo blanco */
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra ligera */
+  max-width: 800px;  /* Limitar el ancho máximo */
+  margin: auto;  /* Centramos el contenedor horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centrar el contenido dentro del contenedor */
+}
+
+/* Título principal del sistema */
+.patients-list-title {
+  font-size: 24px;  /* Tamaño de fuente para el título principal */
+  margin-bottom: 20px;  /* Espacio debajo del título */
+  color: #333;  /* Color del texto */
+  font-family: 'Georgia', serif;  /* Tipografía Serif */
+  text-align: center;  /* Centrar el texto del título */
+}
+
+/* Subtítulo para la lista de pacientes */
+.patients-list-subtitle {
+  font-size: 20px;  /* Tamaño de fuente para el subtítulo */
+  margin-bottom: 15px;  /* Espacio debajo del subtítulo */
+  color: #555;  /* Color del texto del subtítulo */
+  text-align: center;  /* Centrar el texto */
+}
+
+/* Estilos de la tabla que contiene los datos de los pacientes */
+.patients-table {
+  width: 100%;  /* La tabla ocupa todo el ancho disponible del contenedor */
+  border-collapse: collapse;  /* Elimina los espacios entre celdas */
+  text-align: left;  /* Alinear el texto a la izquierda */
+  font-family: 'Georgia', serif;  /* Tipografía Serif */
+  margin-top: 20px;  /* Espacio por encima de la tabla */
+}
+
+/* Estilos para las celdas del encabezado de la tabla */
+.patients-table th,
+.patients-table td {
+  padding: 12px 15px;  /* Espaciado interno de las celdas */
+  border-bottom: 1px solid #ddd;  /* Línea inferior en cada celda */
+  color: #444;  /* Color del texto de las celdas */
+}
+
+/* Fondo gris claro para las celdas del encabezado */
+.patients-table th {
+  background-color: #f4f4f4;  /* Fondo gris claro para el encabezado */
+  font-weight: bold;  /* Texto en negrita */
+}
+
+/* Fondo alternativo para las filas de la tabla */
+.patients-table tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Fondo gris claro para filas pares */
+}
+
+/* Efecto de resaltado cuando se pasa el ratón sobre una fila */
+.patients-table tr:hover {
+  background-color: #f1f1f1;  /* Fondo ligeramente más oscuro al pasar el ratón */
+}
+
+/* Estilo para los botones de acción */
+.patients-table button {
+  background-color: #444;  /* Fondo gris oscuro */
+  color: white;  /* Texto blanco */
+  border: none;  /* Sin borde */
+  padding: 8px 12px;  /* Espaciado interno */
+  border-radius: 4px;  /* Bordes redondeados */
+  cursor: pointer;  /* Indicador de clic */
+  margin-right: 5px;  /* Espacio entre botones */
+}
+
+.patients-table button:hover {
+  background-color: #666;  /* Fondo más claro al pasar el ratón */
+}
+
+/* Estilo para el formulario de pacientes */
+form {
+  margin-bottom: 20px;  /* Espacio debajo del formulario */
+  width: 100%;  /* Asegura que el formulario ocupe el mismo ancho que la tabla */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form div {
+  margin-bottom: 10px;  /* Espacio entre cada campo del formulario */
+  width: 100%;  /* Cada campo ocupa todo el ancho disponible */
+}
+
+form label {
+  display: block;
+  font-weight: bold;  /* Texto en negrita */
+  margin-bottom: 5px;  /* Espacio debajo de la etiqueta */
+}
+
+form input {
+  width: 100%;  /* El campo de entrada ocupa todo el ancho disponible */
+  padding: 8px 10px;  /* Espaciado interno */
+  border-radius: 4px;  /* Bordes redondeados */
+  border: 1px solid #ddd;  /* Borde gris claro */
+}
+
+form button {
+  background-color: #28a745;  /* Fondo verde */
+  color: white;  /* Texto blanco */
+  border: none;  /* Sin borde */
+  padding: 10px 15px;  /* Espaciado interno */
+  border-radius: 4px;  /* Bordes redondeados */
+  cursor: pointer;  /* Indicador de clic */
+  width: 100%;  /* Botón de ancho completo */
+}
+
+form button:hover {
+  background-color: #218838;  /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo del body para centrar el contenido */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  /* Altura completa de la ventana */
+  margin: 0;  /* Sin márgenes */
+  background-color: #333;  /* Fondo oscuro */
+}
